@@ -9,7 +9,7 @@ body{
 }
 .jumbotron{
 
-    /* background: url("../images/contact/moab-utah.jpg"); */
+    background: url("../images/contact/moab-utah.jpg");
    /* height: 150%; */
    /* min-height: 750px; */
    /* opacity: .3; */
