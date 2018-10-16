@@ -12,7 +12,7 @@ var PORT = process.env.PORT || 3000;
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname , 'public')));
+app.use(express.static(__dirname + "/public"));
 
 
 var syncOptions = { force: false };
@@ -32,7 +32,6 @@ if (process.env.NODE_ENV === "test") {
 // Basic route that sends the user first to the AJAX Page
 app.get("/", (req, res)  => {
   res.sendFile(path.join(__dirname, "index.html"));
-  // res.sendFile(path.join(__dirname, "public"));
 });
 
 //
